@@ -1,0 +1,50 @@
+# creating button ( Proj.. 1)-epi 1
+
+
+from kivymd.app import MDApp
+from kivymd.uix.label import MDLabel
+from kivymd.uix.card import card 
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.button import MDFillRoundFlatButton
+
+
+class QTSApp(MDApp):
+
+    def build(self):
+        self.theme_cls.theme_style = "Dark"
+        self.theme_cls.primary_palette = "Red"
+        self. theme_cls.primary_hue = "900"
+
+        return (
+            MDScreen(
+                MDFillRoundFlatButton(
+                    text = " Hello Univers ",
+                    pos_hint = { "center_x":0.5,"center_y":0.5 },
+                    md_bg_color=self.theme_cls.primary_light, 
+                ),
+
+                MDFillRoundFlatButton(
+                    text = " A.P Lord is here  ",
+                    pos_hint = { "center_x":0.5,"center_y":0.4 },
+
+
+                ),
+                MDFillRoundFlatButton(
+                    text = " the best",
+                    pos_hint = { "center_x":0.5,"center_y":0.3 },
+                    md_bg_color=self.theme_cls.primary_dark,  
+                ),
+
+
+                MDFillRoundFlatButton(
+                    text = " at tcs",
+                    pos_hint = { "center_x":0.5,"center_y":0.2 },
+                    md_bg_color=self.theme_cls.primary_dark,  
+                ),               
+            )
+
+        )
+
+
+QTSApp().run()
+
