@@ -1,0 +1,22 @@
+# proj ---> 3 
+from kivymd.app import MDApp
+from kivymd.uix.button import MDFlatButton
+from kivymd.uix.screen import MDScreen
+
+class Example(MDApp):
+    def build(self):
+        self.theme_cls.primary_palette = "Orange"
+        self.theme_cls.theme_style = "Dark"
+
+        return (
+            MDScreen(
+                MDFlatButton(
+                    text = " helo, world ",
+                    pos_hint ={ "center_y":0.5,"center_x":0.5},
+
+                ),
+            )
+        )
+
+Example().run()
+
