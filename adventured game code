@@ -1,0 +1,45 @@
+# choose your oen project code 
+
+
+name = input("type your name: ")
+print("welcome", name, " to this advanture!")
+
+answer = input("you are on a dirt road it has come to an end to an end you can go left or right. which way would you like to go?").lower()
+
+
+if answer == "left":
+    answer = input("you come to a river, you can walk areound it or swim accross? type walk around swim to swim accross")
+
+    if answer == "swim":
+        print("you swam across and were eaten by an alligator.")
+    elif answer == "walk":
+        print("you walked for many miles, ran out of water and you lost the game.")
+    else:
+        print('not a valid option. you lose.')    
+
+elif answer == "right":
+    answer = input("you come to a bridge, it look wobbly , do you want to cross or head back ")
+
+    if answer == "back":
+        print("go back to the main road..")
+    elif answer == "cross":
+        answer = input("you cross the bridge and meet the stranger.")
+
+        if answer == "yes":
+            print("you talk to the stranger . you win!.")
+
+        elif answer =="no":
+            print("you ignore the stranger. you lost")
+
+        else:
+            print('not a valid option. you lose.')            
+
+    else:
+        print('not a valid option. you lose.')    
+
+
+else:
+    print('not a valid option. you lose')
+
+print(" Thank you for trying ")
+
